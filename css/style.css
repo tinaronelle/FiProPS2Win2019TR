@@ -1,0 +1,306 @@
+/* ---CSS Style Sheet ---*/
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Lato|Roboto');
+
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'EB Garamond', serif;*/
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+} 
+
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem; 
+}
+
+/* --- Navigaton --- */
+.navbar{
+  text-transform: uppercase; 
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: .1rem; 
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.bg-dark{
+  background:#070021 !important;
+}
+ .navbar-nav li{
+  padding-right: .1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: .8rem;
+}
+ 
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .nav-link:hover {
+  color:#FBA481;
+} 
+
+/* --Landing Page  --*/
+.home-inner { 
+  background-image: url("../img/helarryliving8revfinal.jpg");
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 48%;
+  z-index: 1;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-shadow: .1rem .1rem .8rem black ;
+  padding-bottom: 1.6rem;
+}
+.caption h3{
+  font-size: 2rem;
+  padding-bottom: 1.6rem;
+}
+
+.btn-md{
+  border-width: large;
+  border-radius: 0;
+  border-color:#d2baf2;
+  padding: .6rem 1.3rem;
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.border{
+  border-width:large;
+  border-color: #000;
+  
+}
+/* ---  About Section ---*/
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.narrow h2 {
+  font-size: 1.9rem;
+  font-family: 'EB Garamond, serif';
+  font-style: italic;
+}
+.intro-heading{
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+.intro-graph{
+  font-size:1.1rem;
+  margin-top: 1rem;
+  /*font-family: 'EB Garamond, sans-serfi';*/
+}
+.border-dark{
+  border-style: solid;
+  border-width: .5rem !important;
+  border-color:#2d0456 !important;
+}
+.btn-secondary {
+  border-width: large;
+  border-radius: 0;
+  padding: .6rem 1.2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem;
+  border-color: #000;
+  background-color: #000;
+  color: #ffffff;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+  border-color: #000;
+  background-color:#d2baf2;
+  color:#000;
+  border-radius: 0;
+}
+
+/*Jumbotron Section*/
+.jumbotron{
+  margin-bottom: 0;
+  padding: 1 rem;
+  border-radius: 0;
+}
+/* -- Feature Section/Cards -- */
+.text-dark{
+  font-family: 'EB Garamond, sans-serif';
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+a:hover{ 
+  text-decoration:none;}
+ 
+.card body{
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  box-shadow:-1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+/* -- Burst/Promo Section -- */
+.fixed {
+  background-image: url("../img/hehomeimage3.jpg");
+}
+.dark{
+  background-color: rgb(0, 0, 0 0.75);
+  color: white;
+  padding: 7rem; 
+}
+.fixed-background h3{
+  margin-bottom: 2rem;
+  
+}
+.fixed-background p{
+  margin-top: 1.5rem;
+}
+
+/* == Contact/Footer Section == */
+footer{
+  background-color:#070021;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1.5rem 0;
+
+}
+footer img{
+  height: 30px;
+  margin: 3 rem;
+}
+
+footer a{
+  color: white;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 2.0rem;
+  margin: 1.2rem .5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color:#FBA481!important;
+}
+.contactsubhead{
+  font-style: italic;
+  font-family:'EB Garamond, serif';
+}
+hr.socket {
+  width: 100%;
+  border-top: 1.2rem solid#fff;
+  margin-top: 3rem;
+}
+.calltoaction{
+  font-size: 2rem;
+}
+/*FIXED CSS*/
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
