@@ -1,33 +1,26 @@
-$(document).ready(function() {
 
-    var delay = 300; // milliseconds
-    var cookie_expire = 0; // days
+            //isValid = false;
 
-    var cookie = localStorage.getItem("list-builder");
-    if(cookie == undefined || cookie == null) {
-        cookie = 0;
-    }
+            //if (isValid)
+                //nextStepSteps.removeAttr('disabled').trigger('click');
 
-    if(((new Date()).getTime() - cookie) / (1000 * 60 * 60 * 24) > cookie_expire) {
-        $("#list-builder").delay(delay).fadeIn("fast", () => {
-            $("#popup-box").fadeIn("fast", () => {});
-        });
 
-        $("button[name=subscribe]").click(() => {
-            $.ajax({
-                type: "POST",
-                url: $("#popup-form").attr("action"),
-                data: $("#popup-form").serialize(),
-                success: (data) => {
-                    $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to the Harlem Enchanted Newsletter!</p>");
-                }
-            });
-        });
-
-        $("#popup-close").click(() => {
-            $("#list-builder, #popup-box").hide();
-            localStorage.setItem("list-builder", (new Date()).getTime());
-        });
-    }
-
-});
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+    
